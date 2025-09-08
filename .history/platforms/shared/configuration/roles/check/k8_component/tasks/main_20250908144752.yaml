@@ -24,7 +24,7 @@
 # Log the status before retry
 - name: Log status before retrying {{ component_type }} {{ component_name }}
   debug:
-    msg: "Checking for {{ component_type }} {{ component_name }}{{ kubernetes.config_file }}  {{ kubernetes.context }} . Retrying up to {{ network.env.retry_count }} times with 35s delay."
+    msg: "Checking for {{ component_type }} {{ component_name }}. Retrying up to {{ network.env.retry_count }} times with 35s delay."
   when:
     - component_type == "Namespace" or component_type == "ClusterRoleBinding" or component_type == "StorageClass"
     - type is undefined or type == "retry"
