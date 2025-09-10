@@ -80,7 +80,7 @@
   delay: "{{ delay | default(30) }}"
   until: component_data.resources|length > 0
   when: component_type == "Pod"
-  #register: pod_retry_result
+  register: pod_retry_result
 
 # Output debug message if Pod creation fails after retries
 - name: Debug information for pod {{ component_name }} failure
