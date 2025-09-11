@@ -27,7 +27,7 @@ spec:
         type: hashicorp
         network: fabric
         address: http://10.106.44.161:8200
-        authPath: Kustomization
+        authPath: localsupplychain
         secretEngine: secretsv2
         secretPrefix: "data/localsupplychain"
         role: vault-role
