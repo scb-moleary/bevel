@@ -26,7 +26,7 @@ spec:
       vault:
         type: hashicorp
         network: fabric
-        address: http://10.106.44.161:8200
+        address: http://10.99.76.139 :8200
         authPath: localmanufacturer
         secretEngine: secretsv2
         secretPrefix: "data/localmanufacturer"
